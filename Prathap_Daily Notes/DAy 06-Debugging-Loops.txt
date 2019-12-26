@@ -1,0 +1,148 @@
+Debugging:
+===========
+when a user develops a code, if some thing went wrong while building the logic and we idientiy the flaw once after executing the program.
+
+now we need to identify where the logic gone wrong and we must need to address it and fix it immediatley.
+
+identifying and fixing is called debugging.
+
+
+Things to remember:
+===================
+
+1.Insert a break point
+
+it mean that from where you want to start debugging, insert a break point there
+
+Go the editor, on left side -->grey pannel-->double click on it
+
+2.Step into (F5)
+
+
+when there is method came across while doing the debugging, if we want to debug the code available inside the method, we need to go into the method levele and start doing the debug.
+
+to enter into the method, we need to perform stepinto(F5)
+
+3.StepOver(F6):
+
+To debug line by line code or skip any method, we use stepover
+
+4.Step Out(F7):
+if we went into a method,and we wish to debug the code partially, then use step out
+
+5.Proceed to execute(F8)
+
+after performing some part of the code in debug mode, and we wish to proceed to for complete execution, then press F8
+
+
+Looping Statements:
+===================
+Repeating same statement for specific number of times, these looping statements are used.
+
+looping statements in java are:
+
+
+	* For loop
+	* While loop
+	* do while loop
+	* For each
+
+For loop:
+this loop is called as definite loop
+This loop is also depends on a conditional statement.
+
+syntax:
+
+for(int someVariable=0;someVariable<=condition;someVariable++)
+{
+
+//repeating statement here
+}
+
+This for loop is having a self increment factor.
+Every time the variable will increment by 1
+
+
+How does a for loop execute:
+============================
+1.First the variable will intialize
+2.check with the condition
+3.if the condition matches proceed to body execution, else exit
+4.when the body got executed, then the variable will be incremented by 1.
+5.Similarly on the second iteration, it will check for the condition as specified in step 2 and repeat as follows
+
+
+Note:
+This looping statements are used majorly to parametrize the variable data
+
+
+While loop:
+=============
+
+This loop is called as indefinite loop
+
+Like for loop, while loop will not have a increment factor.
+
+user must explicitly write a increment factor
+
+If there is no increment factor or a failing condition , then this loop will never  end.
+
+synatx:
+
+while(some condition)
+{
+//body
+}
+
+
+Steps:
+1.Define a variable and assign the starting value to it
+
+2.Write the syntax of while loop with condition
+3.if the condition is only true then only it allows into the body, else exit from there
+4.if the condition is true,user must ensure there is a increment factor or failing condition available
+
+5.once the iteration is completed , it will start from beginning again to check the condition and repeast the process step 3
+
+
+
+DoWhile loop:
+======================
+
+This loop is also as same as while loop
+
+the only difference is, in while loop we will check for the condition at the intial stage only, when the condition is true, then only it will allows the body to execute
+
+Where in do while , we wont check any condition, it will go for execution of the body.Once the body is completely executed on second iteration onwards it will check for the condition.
+
+in do while loop my code will get executed atleast once.
+
+
+Syntax:
+
+do
+{
+
+}while(some condition);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
