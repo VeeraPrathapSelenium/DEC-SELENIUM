@@ -1,0 +1,164 @@
+Day 01:Starting with java 
+
+Java as a software is owned by sumnmicrosystems later quired by oracle.
+
+This java as softwrae available in the format of "Free ware"
+
+To use java in the application developement , we must need an account on the oracle and then only we can get the softwre
+
+
+Min requirements:
+
+4GB Ram preffer to have 8GB in place
+
+Either >= win 7
+
+Steps to download:
+
+
+?
+
+What you mean by JDK and JRE?
+
+JDK is called as JAVA DEVELOPMENT KIT
+
+It helps the userr to build the application and also it helps the user to execute smoothly
+JDK+JRE=JDK
+
+JRE is the one which is used to execute only the programs
+JAVA RUNTIME ENVIRONMENT
+
+
+Java is a programming language, where it is binded up with set of rules and regulation and these rules will be controlled by the compiler called "JVM"
+
+JVM stands for java virtual machine
+
+The statement that what ever the developer wrote will scan by the JVM , and if these statements are aganist to the rules embarked in JVM, JVM will throw an exception we called it as Design time or compile time exception
+
+
+this java as a software , provided a flexibilty to integrate with any kind of IDE like Eclipse,NetBean,Visual studio code,InteliJ
+
+What do you mean by IDE:
+
+integrated devlopment environment
+
+These IDE provide a feature called "inteligence"
+
+It helps the user to provide the proper syntax of the program.
+if the user written the program againist to the rules of JVM, it warn the user then and there
+
+This IDE is also provide a feature to intigrate with SCM like
+Bitbucket,GITHUB,SVN merculi etc
+
+SCM=Source Code Management
+
+
+In currenet market , Eclipse and Intelij are in demand
+
+Intelij has quite features
+Debugging is little confusing in inteliJ when we compare to Eclipse
+
+Intelij has feature where it can register the nvaigation of the files
+
+
+This intelij is avilable in two formats
+
+	* Community 
+	* Commercial or enterprise
+
+Eclipse is free ware every one can use it
+
+For a begineer eclipse is the best option to start with
+
+
+Eclipse is avialble as .exe installer file on the google
+Go to google>> type eclipse download>>> eclipse for developers
+
+
+Rules in installing the eclipse:
+1.Ensure you have configure java on the system
+
+press==>> win+r
+Type ==>> cmd
+Press enter
+
+2.Run the command java -version
+
+You should able to view the output as :
+
+java version "1.8.0_172"
+Java(TM) SE Runtime Environment (build 1.8.0_172-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.172-b11, mixed mode)
+
+if you are not able to view this output on the system then follow the below steps
+
+Naviagte to the below path
+C:\Program Files\Java\jdk1.8.0_172\bin
+
+Navigate to my computer>>> properties>>>Advance System Settings>>environment variables
+
+search for the variable called "PATH"
+
+Click on edit
+
+Press "End Key from the keyboard"
+Enter semicoln(;)
+paste the path
+
+
+Click on new>>>Enter the name of the variable as "JAVA_HOME"
+
+Value as 
+C:\Program Files\Java\jdk1.8.0_172
+click on OK
+
+again reopen a new commandprompt and run the java -version
+
+
+
+Once you see this output , go to download and install the eclipse ide
+
+How to create a new project in Eclipse:
+
+1.Go to file
+2.Choose "New"-->other-->Java-->Java Project--Next
+3.Enter the project name
+4.Expand teh project
+5.Navigate to SRC
+6.Craete a package
+7.Create a classFile
+
+classfile is the placeholder for every developer to write the code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

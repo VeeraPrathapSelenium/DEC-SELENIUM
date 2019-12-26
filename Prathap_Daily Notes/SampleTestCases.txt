@@ -1,0 +1,24 @@
+Tc_01:
+===================
+1.Launch the browser
+2.Click on register
+3.wait till register header is visble
+4.Enter/Select all mandatory details
+5.Click on the register button
+6.Verify user is registered
+7.close the browser
+
+Tc_02:
+====================
+1.Launch the browser
+2.Login with existing user
+3.wait till some header is displayed
+4.Enter/Select some data
+5.Click on update button
+6.close the browser
+
+Tc_03:
+====================
+1.Launch the browser
+2.wait till some header is displayed
+3.close the browser

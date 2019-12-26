@@ -1,0 +1,175 @@
+Naming Notations of an variable:
+
+
+1. a variable name must be short and readable, try to give the name of the varaible related to the business process
+
+for example , i a  working on loginmodule, here i need to save my username and password so that i need two variables.
+
+now i would like to name the variables as
+
+	* username
+	* password
+
+do not give the names as a or xyz etc..
+
+2.Variable name should not have any spaces in between them
+
+ex:User Name (This is not allowed in java)
+
+3.Instead of a space use underscore.
+4.Other than underscore no other special character is allowed.
+5.A variable name can starts with underscore.
+6.Varaibles are always case Sensitive
+7.Variable can not starts with a numeric , but a numeric can be available at any other position.
+8.A variable can store at max of one value one at a time(most recent value)
+
+9.A variable can not be duplicate declaration, but a variable can reintialize again
+
+============================================================
+
+My Method is having 2 paramters say like a,b of int type, but unfourtunately i do have some static and instace variable with same name at class level.
+
+Now what values will be considered in the method , (i,e) either from class level or at method level.
+
+
+No Matter wheter variable are static or instance, when the local variable(parameters) are of same name with class level variables, the compiler will give preference to "local variable(parameters)"
+
+to access rthe current class variables in such cases, use a keyword called "this"
+
+this is used to represent the current class variables.
+
+this is also used to represent the current class methods.
+
+Note:
+This can not be used in static block.
+
+
+============================================================
+Conditional statements:
+
+these statements are used to control the flow of execution.
+
+these controlling will be truley depend on some condition.
+
+this condition might be either true/false.
+
+conditional statements in java are 
+
+	* simple if
+	* if else
+	* else if
+	* switch case
+
+simple if: 
+it is called as if condition.
+Here we will not check  any aleterantive condition or we will not execute any alternative code.
+
+this condition will check always againist true statement
+
+synatx:
+
+if(some condition){
+// some logic here
+}
+
+
+else if:
+
+This used to check an alterative condition when the simple if is only failed.
+
+If the simple if true, then the else if will never get executed.
+
+if(some condition){
+
+// some logic here
+
+}else if (some condition)
+{
+
+//some logic here
+}else
+{
+//
+}
+
+Note:When the both conditions are failed, then the else block will get executed.
+
+
+Problem statement:
+
+When a user input the number as 1 he should get the output as sunday,if input is 2 then he should get the output as monday like wise he needs to print the day based on given input.
+
+if the number is not in the range of 1-7 then he should print the statement as "invalid " input
+
+
+in this scenario, we basically think for writting if and else if statements.
+
+But this will increase the execution time, in checking each statement. to over come this multiple else if statements "Switch case" is introduced.
+
+
+switch cases are very powerfull in handling multiple conditions.
+
+
+Note:Only if the matching case is available then only rthe logic will get executed.
+
+
+
+syntax:
+
+switch(key){
+case 1:
+
+	//some logic
+	break;
+case 2:
+
+	//some logic
+	break;
+case n:
+
+	//some logic
+	break;
+
+default:
+	//som logic
+
+}
+
+Note:
+Break is mandatory after each case
+if there is no break keyword, the subsequent cases will get executed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

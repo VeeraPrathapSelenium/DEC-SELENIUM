@@ -1,0 +1,151 @@
+Understand the skelton of a java program:
+
+
+Every user , to develop the code in java , the only place holder we have here is "Class File"
+
+
+Structure of a class file:
+
+
+Class SomeName{
+
+
+// wirte your business logic
+
+
+
+}
+
+yes we came to knbow what is the basic structure of the java class file.
+
+Nopw if wanrt to execute or run , my program how can i execute it?
+
+Before you think about it, we must ensure that there is main method available inside the class file or not?
+
+Why should think about it?
+
+This the rule which was made by the compiler , to check and execute the program.
+
+This main method is called as starting point of execution.
+
+
+so there is no way to skip the main method , only when you  want to execute the program.
+
+syntax of the main method:
+
+public static void main(String[] args)
+{
+// call your logic from here
+}
+
+Now this main method must be included in between the class file curly brackets
+
+Class SomeName{
+
+	public static void main(String[] args)
+		{
+			// call your logic from here
+		}
+
+
+}
+
+Note:
+Only if you have main method , user can see run option with java application.
+
+
+
+To see the ouput of a program in java , we use a most commonly used syntax
+
+System.Out.Println("Some message" or some number);
+
+
+
+Note:In java each statement must need to ends with semicolon
+
+
+Variable:
+
+A variable is called as memeory holder
+
+it is used to store the data,copy and send the data across the programs either it may available in same file or in other file.
+
+To store the data inside a varible, one must define its datatype
+
+datatype is the one which tells, that what kind of data does a variable is storing.
+
+These types are splited into two
+
+	* Primitive
+	* Non-Primitive
+the adatatypes that we use in java
+
+
+Primitive Datatypes:
+
+int===to store integer values(whole numbers)
+long
+boolean
+short
+double
+char
+float
+byte
+
+each one of the above listed datatype is size oriented one
+
+
+Non-Primitive:
+
+Integer
+String
+Boolean
+Array
+Long
+Byte.....
+
+they differ in cases,
+
+Primitive datatypes will not have methods associate with it
+where as non primitive will have methods
+
+Primitive datatypes will; not have memeory address location, where as non primitive will have
+
+
+How to create a variable:
+
+There are multiple ways to create a varaible
+
+1.Declaration
+
+datatype variablename;
+
+when we declare a variable a small memory block will be created in the main memeory
+
+2.Intialization
+
+variableName="some value";
+
+
+
+
+When we have multiple variable of same type, we can declere then in a single line 
+
+int a,b,result;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

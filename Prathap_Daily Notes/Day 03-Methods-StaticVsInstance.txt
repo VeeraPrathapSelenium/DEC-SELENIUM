@@ -1,0 +1,132 @@
+Methods:
+
+Method is a block of code , where user will write business logic inside it, and used for the purpose of "reusability".
+
+
+We genearlly make method to be dynamic in nature.
+
+We must try to eleminate the hardcoded values.
+
+it means that , a method must be in the position to accept the inputs from the user.
+
+accepting inputs by a method is called as "Parameters"
+
+Sending values to the method is called "Arguments"
+
+from the above statement we confirmed that a method will accept a value, at the same time a method can also a return a value.
+
+
+returning a avlue is nothing but, send some output back to the user.
+
+method syntax with parameters:
+===============================
+
+accessModifier static/instance  returntype  methodName( datype param1,datype param2...datype paramN)
+{
+
+//business logic here
+
+// if return value is required
+return somevalue;
+}
+
+
+method name+parameters is called as signatures.
+
+
+A function or method can be assigned to a variable ? 
+
+Yes we can assign , only if the method is returning a value.
+
+
+while we return a value from method , it should match to appropriate datatype
+
+ex: when you try to return a int , the return type must be a int
+
+
+Create  methods where you can do add, sub, div
+
+
+Condition:
+No Value must hardcoded, every method should return a value.
+
+
+Static Vs instance:
+==================
+
+static and instance are both deal with a common term called memory.
+
+it is all about memory management.
+
+
+For all static items, class will be providing the memory.
+
+so static items can be access through className
+************************************************
+
+For instance item, class will not provide the memory, so a object is used to create the memory.
+
+when ever you create an object, a new memeory allocation will be happened, such that the peristance of the old value is very minimal.
+
+so be cautious, when you want to store the value as an instance.
+
+its good to check , if there is an object is created or not, if no object is created then create a new object, else use the existing old object only
+
+
+How to create an object?
+
+Object is called as an instance of a class.
+
+Generally an object is created, to allocate memory to the instance level items either variable or methods.
+
+An object can also hold static level items also.
+
+this object can be created in two ways
+
+	* Named Object
+	* Nameless Object
+
+
+Syntax:
+
+ClassName refrenceVariable=new ClassName ();
+
+
+
+new ClassName ();=============>>> Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

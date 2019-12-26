@@ -1,0 +1,44 @@
+How to consume other class properties?
+
+
+Here properties reffered to variables and methods.
+
+No matter where they are residing, if they are static call them by className
+
+If they are instance type , then create an object then call them.
+
+However it may differ when there is a inheritance applied.
+
+
+Types of variables:
+
+* Static variables
+* instance variables
+* local variables
+
+Local Variables:
+================
+A variable which is created and intialized inside a method is called a local variable
+
+the life time of this variable will be within this method only.
+
+Note:When a variable is declared inside a method , but it is not intialized , when we try to consume that particular variable, compiler will throw an exception .
+
+Static variables can not be a local type.
+
+
+Static Or Instance Variables:
+=============================
+
+These variables are also called as "Global Level" variables
+
+Variable which are declared inside a class but out side a method, called as "Global" variables.
+
+
+
+
+
+
+
+
+
