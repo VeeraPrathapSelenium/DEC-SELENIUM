@@ -1,0 +1,28 @@
+Problem Statement:
+
+When a user intput any value, check if the number is prime or not
+
+Algorithm:
+
+1.create a placeholder to get any input from the user
+2. Prime number== one and its self divisble
+
+it means that totaly it should get divisible 2 times
+
+if a number divided more than 2 time, i conclude that it is not a prime.
+
+
+Ex: if value =5
+
+
+1,2,3,4,5
+
+
+Steps:
+1.create int variable and set to 0
+
+2.When ever a number is getting reminder as zero , then increment the value
+
+3.Once after completing all the numbers,then check if it is 2  or more than 2
+
+4.Write a condition, if int value is 2, then prime, else not a prime

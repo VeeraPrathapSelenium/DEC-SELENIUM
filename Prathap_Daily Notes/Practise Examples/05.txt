@@ -1,0 +1,6 @@
+Without using charAt method can you extract character by character of a given string?
+
+Yes this can be do in different ways.
+
+1.using substring
+2.converting the string into char array

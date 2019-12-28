@@ -1,0 +1,78 @@
+Strings:
+===========
+
+Strings are collection of words.
+
+String is represented in double quaotes
+
+String is combination of words, numbers, special characters.
+
+
+String is a class aswell as a datatype.
+
+String is also called as "immutable"
+
+once you set the data then data can not be changed ideally.
+
+there are multiple ways to declare a string:
+
+
+1. String s="india";
+
+2.String str=new String("inida")
+
+3.StringBuffer bfr=new StringBuffer("india");
+4.StringBuilder blder=new StringBuilder("india");
+
+When we speak about string we must need to rememeber how the memeory management is happening on a string
+
+on strings it is a very special case available in java
+
+there are two kinds og memeory holders available called as Heap memory and Pool memory
+
+this pool memeory is also called as "String constant pool" memory.
+
+
+
+To manipulate the data of a string there are few methods associated withit
+
+1.length:
+this method is used to get the length of a given string.
+
+input:string
+return:int
+synatx:string or string variable .length()
+
+
+diff b/n length() and length
+
+length()==mapped for string
+length==mapped for arrays
+
+2.charAt():
+this method is used to get the character from a specifix index given by the user on the source string.
+
+
+input:string
+return:character
+
+syntax:string or string variable .charAt(index)
+
+
+3.substring():
+this method is used to get the sequence of characters from a given source string
+
+this method have 2 parameters 
+
+1st param=== tell about the starting point, its an index value
+
+2nd param=== tell about the length of characters
+
+again length must be calucaled from the starting point of the  string
+
+
+
+
+
+
+

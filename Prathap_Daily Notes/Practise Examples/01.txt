@@ -1,0 +1,41 @@
+1.As an student i want to print the table for any given number till 20.could you please write a program in order to print any table for any given value by the student.
+
+
+Before you get start with any problem statements think for the below listed steps
+
+
+1.Think of what?
+
+here what describe your object. what you want to achive.
+
+
+2.Think of how?
+
+how defines how are are you going to solve this problem.
+
+Try to break the statement into parts.
+
+See properly how the format or pattern is available in the problem statement
+
+Algorithm:
+
+1.Create a placeholder, where user can input the value
+
+2.What is the pattern of data to be print
+
+Ex: 2 * 1 = 2
+    2 * 2 = 4.....2 * 20 =40
+
+3.See what is repeating  in the patter or format
+4.Analyse the static and variable data 
+
+
+static==* ,=
+dynamic= LHS==2 ,1 RHS=2
+
+
+userinput * i = i*userinput 
+
+
+5.Make each dynamic value as variable
+

@@ -1,0 +1,12 @@
+Raj has a variable "x" and x is holding a value called 10
+
+also he have variable "y" and holding 20, 
+
+when he print x he want to get the ouput as 20
+when he print y he want to get the ouput as 10
+
+
+But he is facing some condition like:
+
+1.Use a third variable and print the output
+2.Without using a third variable print the output

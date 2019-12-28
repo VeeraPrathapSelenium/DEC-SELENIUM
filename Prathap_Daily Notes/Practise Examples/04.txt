@@ -1,0 +1,2 @@
+I have a string "welcome to java training", in this given string count how many vowels and consonants are available?
+
