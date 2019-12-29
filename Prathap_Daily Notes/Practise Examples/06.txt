@@ -1,0 +1,32 @@
+Ram has a string some thing like "3a4b5D7"
+
+Ram want the output like 
+
+aaa
+bbbb
+DDDDD
+
+7--Ignored
+
+
+Alogorithm:
+
+1.Here if you observe there is a pattern running
+
+After every numeric,there is alphabet after every alphabet there is numeric.
+
+2.When step1 statisfy we need to break the string
+
+3.Create a method which accepts 2 parameters, this helps you to print the output
+
+1-numeric
+2-charcter
+
+
+Challenges:
+
+1.Finding if the character is numeric or not
+2.Breaking the string
+
+
+
