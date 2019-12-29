@@ -70,9 +70,69 @@ this method have 2 parameters
 
 again length must be calucaled from the starting point of the  string
 
+4.Character.isDigit()
+
+This method is used to verify if the user given character is numeric or not
+
+input:character
+return:boolean
+
+syntax:
+
+Character.isDigit("some character")
+
+5.split()
+This method is used to break the given string into words by using a delimiter
+
+input:String
+return:Array
+
+syntax:string or string variable .split("delimiter")
+
+7.Character.isLetter()
+
+This method is used to verify if the user given character is letter or not
+
+input:character
+return:boolean
+
+syntax:
+
+Character.isLetter("some character")
+
+
+8.Character.isWhitespace()
+
+This method is used to verify if the user given character is space or not
+
+input:character
+return:boolean
+
+syntax:
+
+Character.isWhitespace("some character")
+
+
+9.Character.isUpperCase() 
+
+This method is used to verify if the user given character is Uppercase or not
+
+input:character
+return:boolean
+
+syntax:
+
+Character.isUpperCase("some character")
 
 
 
+10.Character.isLowerCase() 
 
+This method is used to verify if the user given character is Lower case or not
 
+input:character
+return:boolean
 
+syntax:
+
+Character.isLowerCase("some character")

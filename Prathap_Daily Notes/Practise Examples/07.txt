@@ -1,0 +1,13 @@
+I places an order on amazon, i got the text as 
+
+"The amount you need to pay is : $1700"
+
+Problem:
+
+1.Taking : as refrence print the dollors amount
+2.Print only numeric amount
+3.cont how many spaces are available
+4.Print the count of capital letters and samll letters
+
+
+
