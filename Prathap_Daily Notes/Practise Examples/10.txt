@@ -1,0 +1,6 @@
+I have a string "inDIA is great country INDia is having good population INDIA is vast country"
+
+
+Count How many time the word india is repeated.
+
+

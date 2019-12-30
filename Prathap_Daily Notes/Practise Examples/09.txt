@@ -1,0 +1,11 @@
+I have a path of one my server like below
+
+E:\Mani Evng\Testing
+
+
+Now from this i want to get the folder anme  of my directory
+
+
+Conditions:
+Do not use any file utility
+do not use anyt looping statemnt or conditional statment

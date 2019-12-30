@@ -1,0 +1,17 @@
+When i do my transaction on a finance application, i generally get a message like
+
+
+	"My Transaction id (1089) is generated sucessfully"
+
+
+from this message, can you pull the number available inside the parenthesis
+
+condition: depends on the transaction type, the message and the number will be keep changing
+
+but the representation of numeric will not be changed
+
+
+1.Do not use any looping statemsnt and conditional statements
+
+
+

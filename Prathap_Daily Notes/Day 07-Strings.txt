@@ -136,3 +136,169 @@ return:boolean
 syntax:
 
 Character.isLowerCase("some character")
+
+
+12.indexOf():
+
+This method is used to position of given word on the source string
+
+This method will return the position of the first occurance only
+
+Note that , it will return the position of the first letter in the word
+
+
+input:String
+return:integer
+
+syntax:
+
+String.indexOf("some word");
+
+
+
+
+
+13.lastIndexOf():
+
+This method is used to last index position of given word on the source string
+
+This method will return the position of the last occurance only
+
+Note that , it will return the position of the first letter in the word
+
+
+input:String
+return:integer
+
+syntax:
+
+String.lastIndexOf("some word");
+
+
+
+
+
+
+
+
+14.toUpper():
+
+This method is used to convert the given string into upper case string
+
+
+input:String
+return:String
+
+syntax:
+
+String.toUpper("some word");
+
+
+
+
+15.toLower():
+
+This method is used to convert the given string into lowercase string
+
+
+input:String
+return:String
+
+syntax:
+
+String.toLower("some word");
+
+
+
+16.trim():
+
+This method is used to remove the space in the starting and ending of the string
+
+
+input:String
+return:String
+
+syntax:
+
+String.trim();
+
+
+
+17.equals():
+
+This method is used to compare two string
+
+input:String
+return:boolean
+
+syntax:
+
+String1.equals(String2);
+
+
+
+18.contentEquals():
+
+This method is also same as to equals only
+
+input:String
+return:boolean
+
+syntax:
+
+String1.contentEquals(String2);
+
+
+
+19.equalsIgnoreCase():
+
+This method is used to compare two strings by ignoring the case sensitivity
+
+
+input:String
+return:boolean
+
+syntax:
+
+String1.equalsIgnoreCase(String2);
+
+20.startwith()
+This method is used to verify if the string is starting with a specific word or not
+
+input:String
+return:boolean
+
+syntax:
+
+String1.startwith(String2);
+
+
+
+21.endswith()
+This method is used to verify if the string is ending with a specific word or not
+
+input:String
+return:boolean
+
+syntax:
+
+String1.endswith(String2);
+
+
+
+22.replace()
+This method is used to identify the match case of the and replace withthe user given value
+
+
+input:String
+return:String
+
+Note:Thermameter is used to measure temparatur, The temparature is very high
+
+Here if i try to search "The" , it will replace every The as a match found
+
+
+syntax:
+
+String.replace(find,replace);
+
