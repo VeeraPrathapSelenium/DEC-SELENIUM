@@ -1,0 +1,15 @@
+The transaction id : 4152 The Voucher number :8541 The Journal Number : 7856
+
+
+i need the output as 
+
+
+The transaction id : 4152
+4152
+
+The Voucher number :8541
+8541
+
+The Journal Number : 7856
+7856
+
