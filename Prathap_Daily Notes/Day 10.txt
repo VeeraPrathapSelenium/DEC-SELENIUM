@@ -1,0 +1,78 @@
+Regular Expression:
+
+Regular Expression is used to validate or extratct pattern based data.
+
+When speak on pattern it is purel called as format.
+
+For example, i need to validate my pan number is available in the below format.
+
+My Pan Card Number Is HJIPM8500E
+
+
+if you look properly , my pan number is available as 
+
+Combination of Alphabets and Numerics.
+
+The problem here is i need to validate if pan number is holding 5 alphabets follwed by 4 numeric and ending with an alphabet
+
+Using the string methods,validating these formats is seriously a tedious process.
+in order to over come this problems regex is introduced.
+
+
+This regex will work in the following manner.
+
+1.Rather than checking the character by character, it will search for only user given data format alone
+
+2.To find teh data format, user must provide the pattern.
+
+3.If the pattern is avialble, then only, the data extraction will be happen.
+
+4.If no pattern is available, then data can not be extracted.
+
+
+
+Learn Writting Patterns:
+========================
+1.Characters set==[]
+
+[A-Z][a-z][0-9]-->And relation
+[A-Za-z0-9]==>>any
+
+2.Sequence of characters or length or pairs===>{size}
+
+3.Include special characters===>>\\special character
+
+4.include one more charcters except new line====>> *
+
+5.include one more charcters include new line====>> .*
+
+6.include spaces====>> \s
+
+7.Only Numeric===>\d
+
+8.Only Alphabets===>\D
+
+9.not===>[^]
+10.Starts-with===>^
+11.Ends-with===>$
+
+
+String builder and String buffer:
+
+These two are called as mutable
+
+we can change data directly without storing into a variable
+
+String buffer is thread safe(Sync), where as String builder is not thread safe(Async).
+
+For better performance String builder is the best.
+
+
+
+
+
+
+
+
+
+
