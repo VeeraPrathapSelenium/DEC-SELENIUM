@@ -1,0 +1,124 @@
+Constructor:
+
+Constructor is called as block of code which look like a method
+
+The constructor name will be same as the classname
+
+A constructor can not return a value, hence user can not use return keyword in the constructor
+
+
+The constructor will trigger, when ever an object is created
+
+There are two types of constructors available called as
+
+	* Parameterized constructor
+	* Non-Parametrized constructor
+
+When ever a class is created, by default there will be a default , non paramaterized, zero argument based constructor created in the background which is not visible to the human eye.
+
+When user creates explicitly a zero argument based constructor, then the compiler will take the prefrence of user created zero argument based constructor.
+
+
+Syntax:
+
+Class MyClass{
+
+
+MyClass(){
+//logic here
+
+}
+
+}
+
+
+when there is an parameterized constructor, when you create an object it is mandatory to send the appropriate parameters to the object.
+
+
+Role of this keyword in constructor:
+====================================
+
+User can use this keyword very well inside the constructor
+
+Using this keyword we can use to intialize the class level variables.
+
+Note:
+If in any interview they ask us to pass the data to class , we should think of constructor is teh only place holder to send the data.
+
+Can i call a constructor from other constructor?
+
+Yes we can call only one constructor one at a time, by using a statement called "this()"
+
+Remember that , calling statement must be always the first statement in the constructor
+
+
+Using the above concept design a class where you can have the name of a class as "School"
+
+The school must have properties like name,age,std,roll number
+
+Create a placeholder where you can send the data to school , such that i can be able to register n number of students.
+
+Remember that , i should never send an id of the student , you must generate the id sequentially based on the old student id.
+
+I should be able to add a student,search a student,delete a student also.
+
+
+Singleton Class:
+================
+
+This class is used to avoid  creating multiple instances or objects
+
+it allows only to create a single object to the class
+
+in this class we have a private constructor and getInsatnce method 
+
+
+1.Constructor is used to intialize the class level variables
+
+2.get instance method will be available as static method where it checks wheter an object is created for the particulr class or not by uing an if condition
+3.this get instance method will return the object of that particular class
+
+4.Return type in the method name must be equla to the class name
+
+
+Note: 
+While acessing the singleton class do not use "new  ClassName();" rather user getinstance method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
