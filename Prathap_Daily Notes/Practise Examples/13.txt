@@ -1,0 +1,106 @@
+OOPS:
+
+Object oriented programming.
+
+This concept is used to build the applications based on a realtionships.
+
+Oops have the following items as a major pillars.
+
+1.Inheritance
+2.Polymorphisim
+3.Encapsulation
+4.interfcae
+5.Abstraction
+6.Class
+7.Object
+
+inheritance:
+
+it is the process of acqyuring the properties of a parent class by a child class
+
+Parent class is called as BaseClass 
+Child class is called as derived class.
+
+
+When we want to estlablish the relation between two classes, the child class must use a keyword called "extends" and get the relationship of parent
+
+
+Types of inheritance
+=====================
+
+1.Single
+2.Mutilevel
+3.Hierarcial
+4.Multiple(not possible)
+5.Hybrid(not possible)
+
+Single level:
+
+One parent one child.
+
+When an object is created to the child class, using that object user can access botrh child class and praent class properties.
+
+if the blocks aare same say like instance or static, no need to create an object, they can access it directly.
+
+
+Parent is having same variable, child is having same variable:
+==============================================================
+Yes child can modify the properties of a parent, unless it is having any restrictions
+
+How can i avoid my child class not to modify the parent class variable,but it must be accessble:
+==================================
+
+Put a final keyword before the variable in the parent class and make it as public
+
+
+
+Parent is having same method name with some logic child is having same method name with some other logic.
+
+if i execute my program which method will get executed?
+======================================================
+
+Child calss method will get executed.
+
+
+This behaviour is also called as method overriding
+
+it is also called as "Late binding"
+
+
+How can we avoid overriding:
+============================
+use final keyword
+
+
+
+A child cannot extend not more than one parent which is called as multiple inheritance.
+
+So in java multiple inheritance is not possible.
+
+
+To overcome the problem of multiple inheritance, interface are introduced
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
