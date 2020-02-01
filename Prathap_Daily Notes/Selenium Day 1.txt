@@ -1,0 +1,62 @@
+How to launch the chrome browser
+
+
+1.Check or update the chrome browser version
+2.Search in google for chrome driver download
+3.Extract and paste teh chrome driver in the project path
+
+
+syntax:
+
+WebDriver driver=new ChromeDriver();
+
+This sysntax will openthe browser
+
+
+How can i pass the url?
+
+User can pass the url , in two ways
+
+
+using navaigateTo() and another is get() method
+
+these two methods are associated with driver object.
+
+Waht is the difference in between these two?
+
+navigate.To() is the method which helps to store the history .
+it also helps teh user to navigate back and farword 
+
+get is the method just tolaunch the browser only.
+
+
+Some time my browser is opening in minimized mode, can i able to maximize it?
+
+
+Yes, you can by managing the window component of the browser
+
+syntax: driverobject.manage().window().maximize();
+
+viceversa:
+driverobject.manage().window().minimize();
+
+
+
+How can i close the browser?
+
+it can be done in two ways
+
+	* using close() method
+	* quit()
+
+close it will close the currently opened browser
+quit it willkill the driver object instance,
+once you quit the driver object again you need to reintialize it.
+
+if you use close, the driver object will be alive, but browser alone will get closed.
+
+
+
+
+
+
