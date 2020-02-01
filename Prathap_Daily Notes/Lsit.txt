@@ -1,0 +1,71 @@
+List is a collection object, which can store multiple elements inside it
+
+List is a dynmaically growing element
+
+It is a replacement of an array
+
+List is not a class its an interface.
+
+
+The root interface of List is "collection"
+
+
+List allows the user to have a null.
+
+List preserver the order of element insertion
+
+List store all the elements at the respective index.
+
+when we want to retrive the data, we must retrive using index
+
+List also a type of generics.
+
+when we wont specify the generics, ir can store data of any type.
+
+Syntax:
+
+List somevariable=new ArrayList();
+
+The list interface is implemented in the class called Arrayslist
+
+add value:
+----------------
+somevariable.add("somevalue")
+
+getvalue:
+-----------
+somevariable.get(index)
+
+remove:
+somevariable.remove(index)
+
+addall():
+------------
+we can add another list into an existing list
+
+somevariable.addAll(another list)
+
+removeAll()
+
+Contains()
+To verify if any element is available in the given list or not
+
+ContainsAll()
+Toverify if any lsit is a subset of given slist
+
+
+set():
+
+used to update the value at a specific index
+
+insert of a new value in between the existing index is not possible
+
+isEmpty():
+to check if the list is empty or not
+
+
+List can be iterate over a listiterator
+
+
+
+

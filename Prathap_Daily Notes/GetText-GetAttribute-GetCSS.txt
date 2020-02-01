@@ -1,0 +1,12 @@
+How to get teh text from a paired html tag?
+
+Use getText() method.
+
+Thsis method is ued only on paired htmltag
+
+
+How to get teh value from a textbox?
+
+Use the method name called getAttribute("value");
+
+if ww want to get any attribute value of a html tag also we can use this same method.

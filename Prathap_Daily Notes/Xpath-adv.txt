@@ -1,0 +1,47 @@
+/following-sibling::htmltag or *
+
+here * indicates any number of htmltag
+
+if you provide html tag it will filter only that particulr html tags alone.
+
+
+HTML CODE:
+<div class="inputs">
+    <label for="FirstName">First name:</label> 
+    <input type="text" data-val="true" data-val-required="First name is required."
+        id="FirstName" name="FirstName"> <span class="required">*</span> 
+    <span class="field-validation-valid"
+        data-valmsg-for="FirstName" data-valmsg-replace="true"></span><
+</div>
+
+
+Xpath tro identify the input box when u dont have unique attribute.
+
+Here we choose the label as a refe
+//label[text()='First name:']/following-sibling::input
+
+Following:-
+
+This will fetch all the foolowing tags under any parent
+
+How to find all the childern under a parent
+=======================================================
+
+
+parenttag/child::* or parenttag/child::htmltag
+
+
+here we get multiple elements
+
+if in case we need all the childern under a parent tag, we must store all the childern insiade a colection object called list
+
+
+suppose in interview they will ask us to get all the option tags under a select tag.
+
+
+
+
+
+
+
+
