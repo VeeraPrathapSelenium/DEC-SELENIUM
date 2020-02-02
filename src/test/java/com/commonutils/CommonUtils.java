@@ -7,6 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.excelplugin.ExcelParser;
 import com.readproperties.ReadProperties;
@@ -174,5 +177,124 @@ public class CommonUtils extends ExcelParser {
 		
 	}
 	
+	/**
+	 * method name:hoverAndClick
+	 * Description: This method is used to hover and then click
+	 * input parameter: String elementName,String pageName,WebElement element
+	 * output parameter:boolean status
+	 */
+	
+	public boolean hoverAndClick(String elementName,String pageName,WebElement element) {
+		Actions action=new Actions(driver);
+		
+		
+		System.out.println("Trying to hovern and click on the  element "+elementName+" on the page "+pageName);
+		boolean status=true;
+		try {
+					
+			action.moveToElement(element).click(element).build().perform();
+			System.out.println("Element "+elementName+" is clicked on the page "+pageName);
+			
+		}catch(Exception e)
+		{
+			status=false;
+			System.out.println("Unable to click the element "+elementName+" on the page "+pageName);
+			System.out.println(e.getMessage());
+		}		
+		
+		return status;
+		
+	}
+	
+	
+	
+	
+	/**
+	 * method name:waitForVisible
+	 * Description: This method is used to hover and then click
+	 * input parameter: String elementName,String pageName,WebElement element
+	 * output parameter:boolean status
+	 */
+	
+	public boolean waitForVisible(String elementName,String pageName,WebElement element,int seconds) {
+		
+		System.out.println("Trying to identify the  element "+elementName+" on the page "+pageName);
+		boolean status=true;
+		try {
+					
+			WebDriverWait wait=new WebDriverWait(driver, seconds);
+			wait.until(ExpectedConditions.visibilityOf(element));
+			System.out.println("Element "+elementName+" is identified on the page "+pageName);
+			
+		}catch(Exception e)
+		{
+			status=false;
+			System.out.println("Unable to indentify the element "+elementName+" on the page "+pageName+" With in the seconds :"+seconds);
+			System.out.println(e.getMessage());
+		}		
+		
+		return status;
+		
+	}
+	
 
+	/**
+	 * method name:waitForInVisible
+	 * Description: This method is used to hover and then click
+	 * input parameter: String elementName,String pageName,WebElement element
+	 * output parameter:boolean status
+	 */
+	
+	public boolean waitForInVisible(String elementName,String pageName,WebElement element,int seconds) {
+		
+		System.out.println("Trying to identify the  disaaperead of element "+elementName+" on the page "+pageName);
+		boolean status=true;
+		try {
+					
+			WebDriverWait wait=new WebDriverWait(driver, seconds);
+			wait.until(ExpectedConditions.invisibilityOf(element));
+			System.out.println("Element "+elementName+" is disaapered on the page "+pageName);
+			
+		}catch(Exception e)
+		{
+			status=false;
+			System.out.println("Unable to indentify the element "+elementName+" on the page "+pageName+" With in the seconds :"+seconds);
+			System.out.println(e.getMessage());
+		}		
+		
+		return status;
+		
+	}
+	
+
+	/**
+	 * method name:waitForClicklable
+	 * Description: This method is used to hover and then click
+	 * input parameter: String elementName,String pageName,WebElement element
+	 * output parameter:boolean status
+	 */
+	
+	public boolean waitForClicklable(String elementName,String pageName,WebElement element,int seconds) {
+		
+		System.out.println("Trying to identify the  of element to be clickable "+elementName+" on the page "+pageName);
+		boolean status=true;
+		try {
+					
+			WebDriverWait wait=new WebDriverWait(driver, seconds);
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			System.out.println("Element "+elementName+" is Clickable on the page "+pageName);
+			
+		}catch(Exception e)
+		{
+			status=false;
+			System.out.println("Unable to indentify the element "+elementName+" on the page "+pageName+" With in the seconds :"+seconds);
+			System.out.println(e.getMessage());
+		}		
+		
+		return status;
+		
+	}
+	
+	
+	
 }

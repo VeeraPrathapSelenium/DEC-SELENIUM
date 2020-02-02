@@ -24,56 +24,25 @@ public class GetAllLinks extends CommonUtils {
 		utils.launchBrowser();
 		
 		Thread.sleep(2000);
-		//List<WebElement> alllinks=utils.driver.findElements(By.xpath("//a"));
-		List<WebElement> alllinks=utils.driver.findElements(By.tagName("a"));
 		
-		System.out.println("Total Links are "+alllinks.size());
+		WebElement search=utils.driver.findElement(By.xpath("//input[@id='small-searchterms']/following-sibling::input"));
 		
-		//iterate each link
+		if(search.isEnabled()) {
+			System.out.println("Search button is enabled");
+		}else
+		{
+			System.out.println("Search button is not enabled");
+		}
 		
-		for (WebElement webElement : alllinks) {
-			
-			try {
-				
-				//verify if the element get displayed
-			if(webElement.isDisplayed())	
-			{
-				System.out.println(webElement.getText());
-				
-				
-				
-				String linkurl=webElement.getAttribute("href");
-				
-				if(!linkurl.isEmpty()) {
-					URL url=new URL(linkurl);
-					HttpURLConnection con=(HttpURLConnection)url.openConnection();
-					int res_code=con.getResponseCode();
-					System.out.println(res_code);
-				}
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			}
-				
-				
-				
-			}catch(Exception e)
-			{
-				System.out.println(e.getMessage());
-			}
-			
-			
-			
-			
-			
-			
+		//test is selected
+		
+WebElement gender=utils.driver.findElement(By.xpath("//input[@id='gender-male']"));
+		
+		if(gender.isSelected()) {
+			System.out.println("Gender button is selected");
+		}else
+		{
+			System.out.println("Gender button is not selected");
 		}
 		
 		
