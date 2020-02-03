@@ -26,7 +26,7 @@ public class HandleWebTables {
 		fw.pollingEvery(2,TimeUnit.SECONDS);
 		fw.ignoring(NoSuchElementException.class);
 		
-		fw.until(ExpectedConditions.visibilityOf(element));
+		//fw.until(ExpectedConditions.visibilityOf(element));
 		
 		
 		

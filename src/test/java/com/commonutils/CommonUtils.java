@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.excelplugin.ExcelParser;
@@ -295,6 +296,93 @@ public class CommonUtils extends ExcelParser {
 		
 	}
 	
+	
+	/**
+	 * method name:selectByVisisbleText
+	 * Description: This method is used to hover and then click
+	 * input parameter: String elementName,String pageName,WebElement element
+	 * output parameter:boolean status
+	 */
+	
+	public boolean selectByVisisbleText(String elementName,String pageName,WebElement element,String value) {
+		
+		System.out.println("Trying to select the  of element by visisble text "+elementName+" on the page "+pageName);
+		boolean status=true;
+		try {
+			Select select=new Select(element);
+			
+			select.selectByVisibleText(value);		
+			
+			System.out.println("Element "+elementName+" is Selected With the value :"+value+" on the page "+pageName);
+			
+		}catch(Exception e)
+		{
+			status=false;
+			System.out.println("Unable to select the element "+elementName+" on the page "+pageName+" With in the value :"+value);
+			System.out.println(e.getMessage());
+		}		
+		
+		return status;
+		
+	}
+	
+	/**
+	 * method name:selectByValue
+	 * Description: This method is used to hover and then click
+	 * input parameter: String elementName,String pageName,WebElement element
+	 * output parameter:boolean status
+	 */
+	
+	public boolean selectByValue(String elementName,String pageName,WebElement element,String value) {
+		
+		System.out.println("Trying to select the  of element by value "+elementName+" on the page "+pageName);
+		boolean status=true;
+		try {
+			Select select=new Select(element);
+			
+			select.selectByValue(value);		
+			
+			System.out.println("Element "+elementName+" is Selected With the value :"+value+" on the page "+pageName);
+			
+		}catch(Exception e)
+		{
+			status=false;
+			System.out.println("Unable to select the element "+elementName+" on the page "+pageName+" With in the value :"+value);
+			System.out.println(e.getMessage());
+		}		
+		
+		return status;
+		
+	}
+	
+	/**
+	 * method name:selectByIndex
+	 * Description: This method is used to hover and then click
+	 * input parameter: String elementName,String pageName,WebElement element
+	 * output parameter:boolean status
+	 */
+	
+	public boolean selectByIndex(String elementName,String pageName,WebElement element,int value) {
+		
+		System.out.println("Trying to select the  of element by index "+elementName+" on the page "+pageName);
+		boolean status=true;
+		try {
+			Select select=new Select(element);
+			
+			select.selectByIndex(value);		
+			
+			System.out.println("Element "+elementName+" is Selected With the value :"+value+" on the page "+pageName);
+			
+		}catch(Exception e)
+		{
+			status=false;
+			System.out.println("Unable to select the element "+elementName+" on the page "+pageName+" With in the value :"+value);
+			System.out.println(e.getMessage());
+		}		
+		
+		return status;
+		
+	}
 	
 	
 }

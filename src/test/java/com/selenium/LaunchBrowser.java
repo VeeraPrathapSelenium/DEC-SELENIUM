@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.commonutils.CommonUtils;
+import com.reporting.Reporting;
 
 public class LaunchBrowser extends CommonUtils {
 
@@ -16,6 +17,10 @@ public class LaunchBrowser extends CommonUtils {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 
+		
+		Reporting report=new Reporting();
+		report.intializeReport();
+		report.startReport("Tc_01_Validate Resgitration");
 		CommonUtils utils=new CommonUtils();
 		utils.loadExcel();
 		
@@ -32,22 +37,35 @@ public class LaunchBrowser extends CommonUtils {
 		//
 		String firstname_data=utils.getData("TestData", "Tc_01", 1, "FirstName");
 		
-		WebElement firstanme=utils.driver.findElement(By.xpath("//input[contains(@id,'FirstName')]"));
+		//WebElement firstanme=utils.driver.findElement(By.xpath("//input[contains(@id,'FirstName')]"));
+		WebElement firstanme=utils.driver.findElement(By.cssSelector("input[name^='First']"));
+		boolean status=utils.clickAndSendData("First Name", "Registration", firstanme, firstname_data);
 		
-		utils.clickAndSendData("First Name", "Registration", firstanme, firstname_data);
+		if(status) {
+			report.logEvent("Pass", "FirstName Entered Sucessfully");
+		}else
+		{
+			report.logEvent("Fail", "FirstName not Entered Sucessfully");
+		}
+		
+		
+		
+		
+		
+		
 		
 		//lastname
 		String lastname_data=utils.getData("TestData", "Tc_01", 1, "LastName");
-		WebElement lastname=utils.driver.findElement(By.xpath("//input[@id='LastName']"));
+		WebElement lastname=utils.driver.findElement(By.cssSelector("input[id$='LastName']"));
 		utils.clickAndSendData("Last Name", "Registration", lastname, lastname_data);
 
 		//email
 		String email_data=utils.getData("TestData", "Tc_01", 1, "Email");
-		WebElement email=utils.driver.findElement(By.xpath("//input[@id='Email']"));
+		WebElement email=utils.driver.findElement(By.cssSelector("#Email"));
 		utils.clickAndSendData("Email", "Registration", email, email_data);
 		
 		//date of birth
-		WebElement dob=utils.driver.findElement(By.xpath("//select[@name='DateOfBirthDay']/option[@value='6']"));
+		WebElement dob=utils.driver.findElement(By.cssSelector("select[name*='DateOfBirthDay']>option[value='6']"));
 		dob.click();
 		
 		
@@ -74,6 +92,11 @@ public class LaunchBrowser extends CommonUtils {
 		WebElement element=utils.driver.findElement(By.xpath("//h1[text()='Register']"));
 		System.out.println(element.getCssValue("font-size"));
 		System.out.println(element.getCssValue("color"));
+		
+		
+		
+		report.endTest();
+		report.flushReport();
 	}
 
 }
