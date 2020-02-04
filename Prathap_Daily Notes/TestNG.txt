@@ -1,0 +1,98 @@
+TestNg stands for test for next generation.
+
+Test is used a unit test framework in the java based application.
+
+it has inbuilt reporting feature.
+
+it has self controlled annotation , which helps the user to cut down writting multiple line of code.
+
+this testNg will works on top of annotions.
+
+The annotation in the testNg are
+
+@BeforeSuit
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterTest
+@AfterMethod
+@AfterClass
+@AfterSuit
+
+
+Here suit is reffered as aset of test cases
+
+@BeforeSuit:
+What should i need to do vbefore my test execution(Batch execution) get started.
+
+	---> Loading excel file
+	---> Loading propertiesfiles
+	---> Loading Extent Reports
+
+
+Note:Before Suite will execute only once at the test execution level.
+
+@Test:
+As we have main method in java, in TestNG the starting execution trigger point is @Test.
+
+only if we have @Test, then only , the test execution will be happened.
+
+After the @Test annotation , method should be get followed.
+
+
+
+Converting individual testcases into suite:
+==========================================
+
+1.Select all the testcases
+2.RightClick--->TestNg-->ConverToTestNG
+3.Xml File Willbe created
+
+
+Executing test.xml:
+===================
+Select the testNg.xml 
+Right click
+run as TestNg
+
+
+
+
+@AfterSuite:
+This annotation is used to do the wrapup activities such like 
+killing the driver object, publishing the test reports,
+disconnecting the datatbases etc.
+
+This annotation will aslo works only once in a while
+
+
+@BeforeTest:
+
+this annotation will execute before,for every <test> tag in the testng.xml
+
+@AfterTest:
+
+this annotation will execute after for every <test> tag in the testng.xml
+
+
+@BeforeMethod
+
+it will get executed before each method which is having @Test as an annotation.
+
+Using @BeforeMethod  can i get the name of the testcase that is currently getting executed?
+
+Yes. Using java reflections we can get teh name of the tset case easily.
+
+But you must ensure that, name of the method is called as testcasename.
+Not the classname
+
+
+
+
+
+
+
+
+
+
