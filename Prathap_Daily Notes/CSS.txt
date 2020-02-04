@@ -1,0 +1,40 @@
+#id
+.class
+
+xpath://htmltag[@attribute='value']
+
+css:htmltag[attribute='value']
+
+
+starts-with
+xpath://htmltag[starts-with(@attribute,'value')]
+css:htmltag[attribute^='value']
+
+Ends-With:
+xpath: N/A
+css:htmltag[attribute$='value']
+
+contains:
+xpath://htmltag[contains(@ttribute,'value')]
+css:htmltag[attribute*='value']
+
+In xapth to write drill down xpath(Farward xpath)
+we use === / or //
+
+here in css we use >
+
+
+Identifying child in xapth--->> htmltag[number]
+in css--> :nth-of-type(number)
+
+select[name*='DateOfBirthDay']>option:nth-of-type(1)
+
+
+
+Identify the following-sibling in css:
+
+htmltag+childtag
+
+select[name*='DateOfBirthDay']>option:nth-of-type(1)+option
+
+

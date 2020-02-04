@@ -1,0 +1,7 @@
+Preceeding Xpath or backward xpath:
+
+//option[text()='6']/preceding-sibling::option
+
+//option[text()='6']/parent::select
+
+//option[text()='6']/ancestor::div[1]
