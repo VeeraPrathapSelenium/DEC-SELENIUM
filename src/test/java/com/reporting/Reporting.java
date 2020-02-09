@@ -73,7 +73,7 @@ public class Reporting {
 	public String getResultPath() {
 		String resultpath = "";
 		try {
-			SimpleDateFormat sdf = new SimpleDateFormat("DD-MMM-YYYY");
+			SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-YYYY");
 			Date d = new Date();
 
 			String crntDate = sdf.format(d);
